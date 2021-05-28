@@ -1,0 +1,68 @@
+.education{
+  width: 100%;
+  padding-bottom: 80px;
+  background-color: lightseagreen	;
+
+}
+.circle{
+  margin-top: 50px;
+  width: 150px;
+  border-radius: 200px;
+  border: 10px white solid;
+  height: 150px;
+  position: absolute;
+  margin-left: 50vw;
+  left: -85px;
+}
+.title{
+  color: white;
+  margin-left: calc(50vw - 100px);
+  padding-top: 220px;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 600;
+  font-size: 35px;
+  font-family: "Trebuchet MS", serif;
+}
+.subTitle{
+  color: black;
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  margin: 0;
+  font-family: "Trebuchet MS";
+}
+.line{
+  margin-top:10px;
+  width: 50vw;
+  height: 2px;
+  background-color: lightgray;
+  margin-left: 25vw;
+}
+
+.educationEnt{
+
+  margin-left: calc(50vw - 300px);
+  height: 110px;
+  width: 800px;
+}
+.leftPart{
+  text-align: left;
+  color: white;
+  display: inline-block;
+  height: 100px;
+  width: 350px;
+  font-size: 20px;
+  font-family: "Trebuchet MS";
+
+}
+.rightPart{
+  font-size: 18px;
+  font-family: "Trebuchet MS";
+  color: white;
+  text-align: left;
+  display: inline-block;
+  height: 100px;
+  width: 450px;
+}

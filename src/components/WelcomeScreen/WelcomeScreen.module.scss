@@ -1,0 +1,48 @@
+.opening{
+  width: 100vw;
+  height: 100vh;
+}
+
+.imgCover{
+  background-color: black;
+  position: absolute;
+  width: 100vw;
+  height: calc(100vh - 66px);
+  margin-top: 66px;
+  opacity: 0.3;
+}
+
+.image{
+  background-attachment: fixed;
+  width: 100vw;
+  height: calc(100vh);
+  background-image: url("../../public/main.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.startText{
+  position: absolute;
+  width: calc(900px);
+  height: 300px;
+  margin-left: 150px;
+  margin-top: calc(50vh - 150px);
+
+  text-align: left;
+}
+.Title{
+  height: 110px;
+  font-size: 100px;
+  line-height: 100px;
+  font-weight: 600;
+  font-family: "Trebuchet MS";
+  color: white;
+}
+.subTitle{
+  margin-top: 15px;
+  font-family: "Trebuchet MS";
+  font-size: 35px;
+  color: white;
+  height: 70px;
+  line-height: 70px;
+}
