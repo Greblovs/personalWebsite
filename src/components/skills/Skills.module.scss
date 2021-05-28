@@ -1,0 +1,78 @@
+.skill{
+
+  width: 100vw;
+  padding-bottom: 100px ;
+}
+
+.title{
+  margin-left: calc(50vw - 100px);
+  padding-top: 80px;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 600;
+  font-size: 35px;
+  font-family: "Trebuchet MS", serif;
+}
+
+.skill_wrapper{
+  margin-top: 50px;
+  margin-left: calc(20vw - 80px);
+  width:70vw;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills{
+
+  width: 400px;
+  display: inline-block;
+
+}
+
+.innerTitle{
+  font-family: "Trebuchet MS", serif;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 600;
+  height: 85px;
+  width: 400px;
+  color : lightseagreen;
+}
+.line{
+  margin-top: 15px;
+  width: 370px;
+  height: 4px;
+  background-color: lightseagreen ;
+}
+.Entery{
+
+  height: 30px;
+  width: 400px;
+  text-align: left;
+  font-family: "Trebuchet MS", serif;
+  font-size: 18px;
+}
+.rating{
+  margin-top:2px;
+  float: right;
+  width: 180px;
+  height: 25px;
+}
+
+.mark{
+  display: inline-block;
+  margin-left: 5px;
+  background-color: lightseagreen;
+  width: 25px;
+  height: 10px;
+}
+
+.emptyMark{
+  display: inline-block;
+  margin-left: 5px;
+  border: 3px solid lightseagreen;
+  width: 19px;
+  height: 4px;
+}
