@@ -7,21 +7,45 @@ import Education from "../Education/Education";
 import SKills from "../skills/Skills"
 import Footer from "../footer/Footer"
 
-const mainPage = () => {
+const MainPage = () => {
 
-
-
-
+    const profileRef = useRef(null)
+    const educationeRef = useRef(null)
+    const skillsRef= useRef (null)
+    const footerRef = useRef (null)
+    const profileScroll = () =>{
+        profileRef.current.scrollIntoView({behavior: 'smooth'})
+    }
+    const educationScroll = () =>{
+        educationeRef.current.scrollIntoView({behavior: 'smooth'})
+    }
+    const skillScroll = () =>{
+        skillsRef.current.scrollIntoView({behavior: 'smooth'})
+    }
+    const footerScroll = () =>{
+        footerRef.current.scrollIntoView({behavior: 'smooth'})
+    }
     return(
         <div >
-            <Menu/>
+            <Menu
+                profileRef = {profileScroll}
+                educationRef = {educationScroll}
+                skillRef = {skillScroll}
+                footerRef = {footerScroll}
+            />
             <WelcomeScreen/>
-            <Profile/>
+            <div ref={profileRef}></div>
+            <Profile />
+            <div ref={educationeRef}>
+            </div>
             <Education/>
+            <div ref={skillsRef}>
+            </div>
             <SKills/>
+            <div ref={footerRef}></div>
             <Footer/>
         </div>
     )
 }
 
-export default  mainPage;
+export default  MainPage;

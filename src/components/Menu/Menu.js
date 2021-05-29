@@ -4,24 +4,27 @@ import classes from "./Menu.module.scss"
 
 
 
-const menu = () =>{
+const menu = (props) =>{
 
     return(
         <>
             <div className={classes.menu}>
-                <div style={{"marginLeft": 150}} className={classes.menuButton}>
-                    About myself
+                <div onClick={props.profileRef} style={{"marginLeft": 150}} className={classes.menuButton}>
+                    Profile
                     <div className={classes.line}/>
                 </div>
-                <div className={classes.menuButton}>
-                    My Interests
+                <div onClick={props.educationRef} className={classes.menuButton}>
+                    Education
                     <div className={classes.line}/>
                 </div>
-                <div className={classes.menuButton}>
+                <div onClick={props.skillRef} className={classes.menuButton}>
                     My skills
                     <div className={classes.line}/>
                 </div>
-
+                <div onClick={props.footerRef} className={classes.menuButton}>
+                    Contacts
+                    <div className={classes.line}/>
+                </div>
             </div>
         </>
     )

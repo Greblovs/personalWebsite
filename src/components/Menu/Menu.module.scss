@@ -15,13 +15,15 @@
   line-height: 66px;
   color: white;
   opacity: 1;
-  margin-left: 50px;
+  margin-left: 10px;
   display: inline-block;
   height: 66px;
   font-weight: 500;
   font-family: "Trebuchet MS", serif;
   font-size: 18px;
   z-index: 1;
+  padding-left: 20px;
+  padding-right: 20px;
 
 }
 .menuButton:hover > .line{
