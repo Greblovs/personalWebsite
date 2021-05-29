@@ -5,7 +5,7 @@ import WelcomeScreen from "../WelcomeScreen/WelcomeScreen"
 import Profile from "../Profile/Profile.js"
 import Education from "../Education/Education";
 import SKills from "../skills/Skills"
-
+import Footer from "../footer/Footer"
 
 const mainPage = () => {
 
@@ -19,6 +19,7 @@ const mainPage = () => {
             <Profile/>
             <Education/>
             <SKills/>
+            <Footer/>
         </div>
     )
 }

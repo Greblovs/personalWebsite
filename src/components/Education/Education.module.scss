@@ -34,20 +34,22 @@
   font-family: "Trebuchet MS";
 }
 .line{
-  margin-top:10px;
+
   width: 50vw;
   height: 2px;
+  min-width: 900px;
   background-color: lightgray;
-  margin-left: 25vw;
+  margin: 10px auto;
 }
 
 .educationEnt{
 
-  margin-left: calc(50vw - 300px);
+  margin-left: calc(50vw - 350px);
   height: 110px;
   width: 800px;
 }
 .leftPart{
+
   text-align: left;
   color: white;
   display: inline-block;
