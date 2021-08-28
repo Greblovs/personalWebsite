@@ -1,0 +1,147 @@
+.project{
+  width: 100vw;
+  background-color: lightseagreen;
+  padding-bottom: 80px;
+  padding-top: 30px;
+
+}
+
+.circle{
+  margin-top: 50px;
+  width: 150px;
+  border-radius: 200px;
+  border: 10px white solid;
+  height: 150px;
+  position: absolute;
+  margin-left: 50vw;
+  left: -85px;
+}
+.title{
+  color: white;
+  margin-left: calc(50vw - 100px);
+  padding-top: 220px;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 600;
+  font-size: 35px;
+  font-family: "Trebuchet MS", serif;
+}
+.subTitle{
+  color: black;
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  margin: 0;
+  font-family: "Trebuchet MS";
+}
+
+
+.line{
+  max-width: 80vw;
+  width:1200px;
+  height: 2px;
+ // min-width: 900px;
+  background-color: lightgray;
+  margin: 10px auto;
+}
+@media (max-width: 1024px){
+  .projectsWrapper{
+    width: 1200px;
+    max-width: 80vw;
+    margin: 50px auto;
+    //display: flex;
+    //justify-content: space-around;
+  }
+}
+
+@media (min-width: 1024px){
+  .projectsWrapper{
+    width: 1200px;
+    max-width: 80vw;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+
+.entery{
+  width: 450px;
+  height: 250px;
+  background-color: black;
+  overflow: hidden;
+}
+.enteryText{
+
+  z-index: 1;
+  text-align: left;
+  width: 450px;
+  height: 250px;
+  background-color: white;
+  color: lightseagreen;
+  margin-top: 250px;
+  transition: 0.2s;
+  opacity:1;
+
+}
+.entery:hover>.enteryText{
+  margin-top: 0;
+}
+.title{
+  margin: 50px auto;
+  font-size: 35px;
+  font-family: "Trebuchet MS";
+  font-weight: 600;
+  color: white;
+}
+
+.innerTitle{
+  margin-left: 50px;
+  z-index: 0;
+  position: absolute;
+  //margin: 0px  auto;
+  font-size: 22px;
+  font-family: "Trebuchet MS";
+  font-weight: 600;
+  color: lightseagreen;
+}
+
+.line{
+  margin-top: 35px;
+  width: 80%;
+  height: 4px;
+  background-color: lightseagreen;
+}
+.text{
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 10px;
+  color: white;
+  border-radius: 50px;
+  font-family: "Trebuchet MS";
+  font-size: 14px;
+}
+.textSecond{
+  display: inline-block;
+  text-align: center;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 10px;
+  color: white;
+  border-radius: 50px;
+  font-family: "Trebuchet MS";
+  font-size: 15px;
+  margin-left: 30px;
+}
+.wrapper{
+  margin-left: 50px;
+  //display: flex;
+  justify-content: space-between;
+  width: 400px;
+}

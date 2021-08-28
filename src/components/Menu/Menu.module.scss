@@ -40,3 +40,42 @@
   transition: 0.2s ease-out;
   margin-left: calc(50%);
 }
+
+.menuPhone{
+  overflow-y: hidden;
+  width: 100%;
+  height: 66px;
+  background-color: black;
+  text-align: left;
+  position: fixed;
+  z-index: 5;
+  // display: none;
+}
+.menuTrigger{
+  margin-left: 20px;
+  margin-top: 9px;
+  transition: 0.2s;
+}
+.rotate{
+  transform: rotate(90deg);
+}
+.menuTarget{
+  margin-top: 66px;
+  margin-left: -100vw;
+  z-index: 10;
+  width: 100vw;
+  height: calc(100vh - 66px);
+  background-color: black;
+  position: fixed;
+  transition: ease-in-out 0.2s;
+}
+.menuOpened{
+  margin-left: 0;
+}
+.menButton{
+  line-height: 66px;
+  width: 100%;
+  height: 66px;
+  color: white;
+  font-size: 20px;
+}

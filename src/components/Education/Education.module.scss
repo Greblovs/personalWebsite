@@ -35,10 +35,9 @@
   font-family: "Trebuchet MS";
 }
 .line{
-
-  width: 50vw;
+  max-width: 80vw;
+  width: 900px;
   height: 2px;
-  min-width: 900px;
   background-color: lightgray;
   margin: 10px auto;
 }
@@ -68,4 +67,14 @@
   display: inline-block;
   height: 100px;
   width: 450px;
+}
+.phoneEntry{
+  color: white;
+  text-align: center;
+}
+.leftPhone{
+
+}
+.rightPhone{
+
 }

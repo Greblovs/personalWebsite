@@ -14,22 +14,40 @@
   font-size: 35px;
   font-family: "Trebuchet MS", serif;
 }
-
-.skill_wrapper{
-  margin-top: 50px;
-  margin-left: calc(20vw - 80px);
-  width:70vw;
-
-  display: flex;
-  justify-content: space-around;
+@media (max-width: 1024px) {
+  .skill_wrapper {
+    margin: 50px auto;
+    width: 1200px;
+    max-width: 100vw;
+    //display: flex;
+    //justify-content: space-evenly;
+  }
 }
+@media (min-width: 1024px){
+  .skill_wrapper {
+    margin: 50px auto;
+    width: 1200px;
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 1024px) {
+  .skills{
+    margin-left: 5vw;
 
-.skills{
+    width: 90vw;
+    //display: inline-block;
 
+  }
+}
+@media (min-width: 1024px){.skills{
+  max-width: 100vw;
   width: 400px;
   display: inline-block;
-
+  }
 }
+
 
 .innerTitle{
   font-family: "Trebuchet MS", serif;
@@ -50,6 +68,7 @@
 
   height: 30px;
   width: 400px;
+
   text-align: left;
   font-family: "Trebuchet MS", serif;
   font-size: 18px;

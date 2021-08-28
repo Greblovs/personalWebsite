@@ -10,7 +10,7 @@ import {FaInstagram} from 'react-icons/fa'
 
 
 const footer = () =>{
-
+    let width = window.innerWidth
     return(
         <div className={classes.footer}>
             <div className={classes.circle}>
@@ -20,28 +20,51 @@ const footer = () =>{
                 Contacts
             </div>
             <div className={classes.line}></div>
-            <div className={classes.contactsWrapper}>
-                <div className={classes.cols}>
-                    <div className={classes.entry}>
-                        < FaTelegram color ={"white"} className={"fa-2x " + classes.contactItem}/>
-                        <span className={classes.contactText}> @Skycat0001</span>
+            {width > 1023 ?
+                <div className={classes.contactsWrapper}>
+                    <div className={classes.cols}>
+                        <div className={classes.entry}>
+                            < FaTelegram color={"white"} className={"fa-2x " + classes.contactItem}/>
+                            <span className={classes.contactText}> @Skycat0001</span>
+                        </div>
+                        <div className={classes.entry}>
+                            < FaLinkedin color={"white"} className={"fa-2x " + classes.contactItem}/>
+                            <span className={classes.contactText}> https://bit.ly/3hZRbpF</span>
+                        </div>
                     </div>
-                    <div className={classes.entry}>
-                        < FaLinkedin color ={"white"} className={"fa-2x " + classes.contactItem}/>
-                        <span className={classes.contactText}> https://bit.ly/3hZRbpF</span>
+                    <div className={classes.cols}>
+                        <div className={classes.entry}>
+                            <FontAwesomeIcon className={"fa-2x " + classes.contactItem} color={"white"}
+                                             icon={faEnvelope}/>
+                            <span className={classes.contactText}> greblovs@oregonstate.edu</span>
+                        </div>
+                        <div className={classes.entry}>
+                            <FaInstagram color={"white"} className={"fa-2x " + classes.contactItem}/>
+                            <span className={classes.contactText}>s.greblov</span>
+                        </div>
                     </div>
                 </div>
-                <div  className={classes.cols}>
-                    <div className={classes.entry}>
-                        <FontAwesomeIcon  className={"fa-2x "  + classes.contactItem} color={"white"} icon={faEnvelope} />
-                        <span className={classes.contactText}> greblovs@oregonstate.edu</span>
+                :
+                <div  className={classes.phoneWrapper}>
+                    <div style={{width: "260px"}} className={classes.phoneEntry}>
+                        < FaLinkedin color={"white"} className={"fa-2x " + classes.contactItem}/>
+                        <span  style={{marginLeft: "10px"}} className={classes.contactText}> https://bit.ly/3hZRbpF</span>
                     </div>
-                    <div className={classes.entry}>
-                        <FaInstagram color ={"white"} className={"fa-2x " + classes.contactItem}/>
-                        <span className={classes.contactText}>s.greblov</span>
+                    <div style={{width: "280px"}}  className={classes.phoneEntry}>
+                        <FontAwesomeIcon className={"fa-2x " + classes.contactItem} color={"white"}
+                                         icon={faEnvelope}/>
+                        <span  style={{marginLeft: "10px"}} className={classes.contactText}> greblovs@oregonstate.edu</span>
+                    </div>
+                    <div style={{width: "125px"}}  className={classes.phoneEntry}>
+                        <FaInstagram color={"white"} className={"fa-2x " + classes.contactItem}/>
+                        <span  style={{marginLeft: "10px"}} className={classes.contactText}>s.greblov</span>
+                    </div>
+                    <div style={{width: "160px"}}  className={classes.phoneEntry}>
+                        < FaTelegram color={"white"} className={"fa-2x " + classes.contactItem}/>
+                        <span style={{marginLeft: "10px"}} className={ classes.contactText}> @Skycat0001</span>
                     </div>
                 </div>
-            </div>
+            }
         </div>
     )
 }

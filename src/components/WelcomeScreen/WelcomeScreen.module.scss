@@ -1,6 +1,6 @@
 .opening{
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh);
 }
 
 .imgCover{
@@ -15,7 +15,7 @@
 .image{
   background-attachment: fixed;
   width: 100vw;
-  height: calc(100vh);
+  height: 100vh;
   background-image: url("../../public/main.jpg") ;
   background-size: cover;
   background-repeat: no-repeat;
@@ -46,3 +46,36 @@
   height: 70px;
   line-height: 70px;
 }
+.phoneText{
+  width: 100vw;
+  height: 300px;
+  position: absolute;
+  text-align: center;
+  margin-top: calc(50vh - 120px);
+}
+.phoneTitle{
+  height: 60px;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 600;
+
+  font-family: "Trebuchet MS";
+  color: white;
+}
+.phoneSubTitle{
+  margin-top: 20px;
+  height: 110px;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 600;
+  font-family: "Trebuchet MS";
+  color: white;
+}
+.line{
+  margin: auto;
+  width: 300px;
+  height: 2px;
+  background-color: white;
+}
+
+

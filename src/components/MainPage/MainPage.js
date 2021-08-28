@@ -6,13 +6,21 @@ import Profile from "../Profile/Profile.js"
 import Education from "../Education/Education";
 import SKills from "../skills/Skills"
 import Footer from "../footer/Footer"
+import Projects from "../myProjects/MyProject.js"
+import Hobbies from "../MyHobies/Hobbies";
 
 const MainPage = () => {
+    const [state, setState] =useState({
+        opened: false
+    })
 
+    let width = window.innerWidth
     const profileRef = useRef(null)
     const educationeRef = useRef(null)
     const skillsRef= useRef (null)
     const footerRef = useRef (null)
+    const projectRef= useRef (null)
+    const hobbiesRef = useRef (null)
     const profileScroll = () =>{
         profileRef.current.scrollIntoView({behavior: 'smooth'})
     }
@@ -25,16 +33,26 @@ const MainPage = () => {
     const footerScroll = () =>{
         footerRef.current.scrollIntoView({behavior: 'smooth'})
     }
+    const projectScroll = () =>{
+        projectRef.current.scrollIntoView({behavior: 'smooth'})
+    }
+    const hobbiesScroll = () =>{
+        hobbiesRef.current.scrollIntoView({behavior: 'smooth'})
+    }
     return(
         <div >
             <Menu
+               // openMenu = {openMenu}
                 profileRef = {profileScroll}
                 educationRef = {educationScroll}
                 skillRef = {skillScroll}
                 footerRef = {footerScroll}
+                projectRef = {projectScroll}
+                hobbiesRef = {hobbiesScroll}
             />
+
             <WelcomeScreen/>
-            <div ref={profileRef}></div>
+            <div ref={profileRef}/>
             <Profile />
             <div ref={educationeRef}>
             </div>
@@ -42,7 +60,11 @@ const MainPage = () => {
             <div ref={skillsRef}>
             </div>
             <SKills/>
-            <div ref={footerRef}></div>
+            <div ref={projectRef}/>
+            <Projects/>
+            <div ref={hobbiesRef}/>
+            <Hobbies/>
+            <div ref={footerRef}/>
             <Footer/>
         </div>
     )

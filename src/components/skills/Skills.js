@@ -24,6 +24,7 @@ const skills = ()=>{
             arr
         )
     }
+    let width = window.innerWidth
 
     return(
         <div className={classes.skill}>

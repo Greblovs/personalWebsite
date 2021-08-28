@@ -1,0 +1,55 @@
+.hobbies{
+  width: 100vw;
+  padding-bottom: 100px ;
+}
+
+.hobbyWrapper{
+  margin: 50px auto;
+  width: 1220px;
+  height: 610px;
+  justify-content: space-around;
+}
+
+.title{
+  margin-left: calc(50vw - 100px);
+  padding-top: 80px;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 600;
+  font-size: 35px;
+  font-family: "Trebuchet MS", serif;
+}
+.hobby{
+  display: inline-block;
+  width: 300px;
+  height: 600px;
+  transition: 0.2s ease-in-out;
+}
+
+.hobbyClosed{
+  display: inline-block;
+  width: 0px;
+  height: 600px;
+  transition: 0.2s ease-in-out;
+}
+.hobbyOpened{
+  display: inline-block;
+  width: 1200px;
+  height: 600px;
+  transition: 0.2s ease-in-out;
+}
+
+
+.first{
+  background-color: green;
+}
+.second{
+  background-color: red;
+}
+.third{
+  background-color: yellow;
+}
+.forth{
+  background-color: orange;
+}
