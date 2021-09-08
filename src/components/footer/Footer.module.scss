@@ -75,6 +75,10 @@
 .contactItem{
   float: left;
 }
+a {
+  color: white;
+  text-decoration: none; /* no underline */
+}
 .contactText{
   margin-left: 30px;
   float: left;

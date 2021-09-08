@@ -17,7 +17,7 @@
 @media (max-width: 1024px) {
   .skill_wrapper {
     margin: 50px auto;
-    width: 1200px;
+
     max-width: 100vw;
     //display: flex;
     //justify-content: space-evenly;
@@ -64,15 +64,30 @@
   height: 4px;
   background-color: lightseagreen ;
 }
-.Entery{
+@media (min-width: 1024px) {
+  .Entery {
 
-  height: 30px;
-  width: 400px;
+    height: 30px;
+    width: 400px;
 
-  text-align: left;
-  font-family: "Trebuchet MS", serif;
-  font-size: 18px;
+    text-align: left;
+    font-family: "Trebuchet MS", serif;
+    font-size: 18px;
+  }
 }
+@media (max-width: 1024px) {
+  .Entery {
+
+    height: 30px;
+
+
+    text-align: left;
+    font-family: "Trebuchet MS", serif;
+    font-size: 18px;
+  }
+}
+
+
 .rating{
   margin-top:2px;
   float: right;

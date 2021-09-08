@@ -1,0 +1,120 @@
+.wrapper{
+  width: 100%;
+  height: 720px;
+}
+.slider{
+  margin-top: 50px;
+  margin-left: 5%;
+  width: 90%;
+  height: 500px;
+  background-color: black;
+  overflow: hidden;
+
+}
+.magazine{
+  transition: 0.2s ease-in-out;
+  width: 360vw;
+}
+
+.active1{
+  margin-left: 0;
+}
+.active2{
+  margin-left: -90vw;
+}
+.active3{
+  margin-left: -180vw;
+}
+.active4{
+  margin-left: -270vw;
+}
+
+
+.element{
+  display: inline-block;
+  width: 90vw;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+.first{
+  background-image: url("../../public/takingPicture.jpg");
+
+
+}
+.second{
+
+  background-image: url("../../public/sports.jpg");
+
+}
+.third{
+
+  background-image: url("../../public/yacht.jpg");
+
+}
+.forth{
+
+  background-image: url("../../public/img2.jpg");
+
+}
+.title{
+  margin-left: calc(50vw - 100px);
+  padding-top: 80px;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 600;
+  font-size: 35px;
+  font-family: "Trebuchet MS", serif;
+}
+
+.buttons{
+  width: 200px;
+  height: 30px;
+  position: absolute;
+  margin-top: 450px;
+  margin-left: calc(50% - 120px);
+  position: absolute;
+
+}
+.button{
+  margin-left: 7px;
+  display: inline-block;
+  width: 30px;
+  height: 10px;
+  opacity: 0.5;
+  background-color: seagreen;
+  border-radius: 5px;
+}
+.buttonActive{
+  margin-left: 7px;
+  display: inline-block;
+  width: 30px;
+  height: 10px;
+  opacity: 1;
+  background-color: lightseagreen;
+  border-radius: 5px;
+}
+.wrapperText{
+  margin-top: 370px;
+  margin-left: calc(50% - 115px);
+  background-color: white;
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  opacity: 0.8;
+  z-index: 1;
+}
+.textTitle{
+  z-index: 4;
+  width: 200px;
+  text-align: center;
+  line-height: 50px;
+  margin-left: calc(50% - 115px);
+  margin-top: 370px;
+  font-size: 20px;
+  color: lightseagreen;
+  position: absolute;
+  font-family: "Trebuchet MS", sans-serif;
+}
+

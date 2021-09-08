@@ -42,14 +42,66 @@
 
 
 .first{
-  background-color: green;
+
+  //background-color: green;
+  background-image: url("../../public/takingPicture.jpg");
+  background-size: 1200px auto;
+  background-position: center bottom;
 }
 .second{
-  background-color: red;
+ // background-color: red;
+  background-size: 1200px auto;
+  background-image: url("../../public/sports.jpg");
+  background-position: center bottom;
 }
 .third{
-  background-color: yellow;
+  background-size: 1200px auto;
+  background-image: url("../../public/yacht.jpg");
+  background-position: center bottom;
 }
 .forth{
-  background-color: orange;
+  background-size: 1200px auto;
+  background-image: url("../../public/img2.jpg");
+    background-position: center bottom;
+  //background-color: orange;
+}
+.titleUnique{
+  transition: 0.2s;
+  opacity: 0;
+  line-height: 50px;
+  background-color: white;
+  width: 200px;
+  height: 50px;
+  margin-left: calc(510px);
+  margin-top: 400px;
+  position: absolute;
+}
+.titleText{
+  transition: 0.2s;
+  opacity: 0;
+  font-size: 22px;
+  z-index: 5;
+  font-weight: 600;
+  color: seagreen;
+  line-height: 50px;
+  //background-color: white;
+  width: 200px;
+  height: 50px;
+  margin-left: calc(510px);
+  margin-top: 400px;
+  position: absolute;
+}
+.uniqueDisplayed{ opacity: 0.7}
+.titleDisplayed{ opacity: 1}
+
+
+.arrowLeft{
+  margin-top: 250px;
+  margin-left: 50px;
+  position: absolute;
+}
+.arrowRight{
+  margin-top: 250px;
+  margin-left: 1100px;
+  position: absolute;
 }

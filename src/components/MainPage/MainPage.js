@@ -8,6 +8,7 @@ import SKills from "../skills/Skills"
 import Footer from "../footer/Footer"
 import Projects from "../myProjects/MyProject.js"
 import Hobbies from "../MyHobies/Hobbies";
+import Slider from "../sliderphone/SliderPhone"
 
 const MainPage = () => {
     const [state, setState] =useState({
@@ -62,8 +63,19 @@ const MainPage = () => {
             <SKills/>
             <div ref={projectRef}/>
             <Projects/>
-            <div ref={hobbiesRef}/>
-            <Hobbies/>
+
+            {width < 1024 ?
+                <>
+                    <div ref={hobbiesRef}/>
+                    <Slider/>
+                </>
+                :
+                <>
+                    <div ref={hobbiesRef}/>
+                    <Hobbies/>
+                </>
+            }
+
             <div ref={footerRef}/>
             <Footer/>
         </div>
